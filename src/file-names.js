@@ -16,7 +16,6 @@ const { NotImplementedError } = require('../extensions/index.js');
  *
  */
 function renameFiles(names) {
-  let k = 1;
   const duplicates = {};
   const result = [];
   
@@ -40,9 +39,3 @@ function renameFiles(names) {
 module.exports = {
   renameFiles
 };
-
-console.log(renameFiles([]));
-
-// assert.deepEqual(renameFiles(['doc', 'doc', 'image', 'doc(1)', 'doc']), ['doc', 'doc(1)', 'image', 'doc(1)(1)', 'doc(2)']);
-//     assert.deepEqual(renameFiles(['a', 'b', 'cd', 'b ', 'a(3)']), ['a', 'b', 'cd', 'b ', 'a(3)']);
-//     assert.deepEqual(renameFiles([]), []);
