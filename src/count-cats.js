@@ -24,9 +24,3 @@ function countCats(matrix) {
 module.exports = {
   countCats
 };
-
-console.log(countCats([
-   [0, 1, '^^'],
-  [0, '^^', 2],
-  ['^^', 1, 2]
- ]));
