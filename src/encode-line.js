@@ -24,7 +24,6 @@ function encodeLine(str) {
       count = 1;
     }
     curr = item;
-
   })
 
   return result + `${count === 1 ? '' : count}${curr}`;
